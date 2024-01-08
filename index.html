@@ -4,20 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changing Color</title>
+    <title>SVG Animated Line</title>
 </head>
 
 <body>
-    <div style="display: flex; flex-direction: column; align-items: center; ">
-        <label for="red">Red</label>
-        <input id="red" type="range" min="0" max="255" value="0">
-        <label for="green">Green</label>
-        <input id="green" type="range" min="0" max="255" value="0">
-        <label for="blue">Blue</label>
-        <input id="blue" type="range" min="0" max="255" value="0">
-        <p id="text" style="font-size: 20px; font-family: Arial;">Change the 3 Color Ranges above and observe my color
-            Change</p>
-    </div>
+    <svg width="300" height="300" viewBox="0 0 300 300" style="border: 1px solid black; background-color: white;">
+        <line id="myLine" x1="0" y1="0" x2="500" y2="300" stroke="red" />
+
+    </svg>
+
     <script src="main.js"></script>
 </body>
 
